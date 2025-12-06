@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: rgba(23, 19, 46, 0.87);
+    color: white;
+    height: 4rem;
+    font-weight: 100;
+    line-height: 4rem;
+}
+
+h2 {
+    margin-top: 5rem;
+    background-color: rgba(23, 19, 46, 0.87);
+    color: #fff;
+    font-weight: 100;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+.choise {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@keyframes shake {
+
+    0% {
+        transform: rotate(20deg);
+    }
+
+    25% {
+        transform: translateY(15px);
+
+    }
+     50% {
+        transform: translateY(-15px);
+
+    }
+     75% {
+        transform: rotate(-20deg);
+
+    }
+    100% {
+        transform: rotate(20deg);
+
+    }
+}
+
+.choise:hover {
+    background-color: black;
+    animation: 0.3s shake infinite;
+
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.choises {
+    margin-top: 10rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    display: flex;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 10rem;
+    text-align: center;
+    margin-top: 3rem;
+
+}
+
+#listner-score,
+#comp-score {
+    font-size: 3rem;
+}
+
+.massage {
+    background-color: rgba(23, 19, 46, 0.87);
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    font-weight: 100;
+
+}
+@media(max-width:768px){
+    h2{
+        font-size: 1rem;
+    }
+  .choises{
+    gap: 0.5rem;
+  }
+  img{
+    height: 100px;
+    width: 100px;
+  }
+  #listner-score,
+#comp-score {
+    font-size: 1.5rem;
+}
+.score-board{
+  gap: 5rem;
+  font-size: 1rem;
+}
+.massage{
+  font-size: 1rem;
+}
+.choise{
+  width: 110px;
+  height: 110px;
+  gap: 5rem;
+}
+}
